@@ -8,7 +8,8 @@ making color composite images.
 # ======================================================================
 # Globally useful modules:
 
-import numpy,Image
+import numpy
+from PIL import Image
 
 # ======================================================================
 # Add small offset to image, to make background look dark gray not black:
@@ -28,7 +29,7 @@ def pjm_mask(r,g,b,threshold):
 
     tiny = 1e-10
     mask = r*0.0 + 1.0
-    
+
     for image in (r,g,b):
 
         image[numpy.isnan(image)] = 0.0

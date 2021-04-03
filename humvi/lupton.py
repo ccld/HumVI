@@ -1,7 +1,7 @@
 # ======================================================================
 
 """
-Functions for implementing the Wherry et al extension to the 
+Functions for implementing the Wherry et al extension to the
 Lupton et al algorithm for making color composite images.
 
 Phil Marshall, Winter 2013
@@ -11,7 +11,8 @@ Phil Marshall, Winter 2013
 # ======================================================================
 # Globally useful modules:
 
-import numpy,Image
+import numpy
+from PIL import Image
 
 # ======================================================================
 
